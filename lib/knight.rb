@@ -1,6 +1,8 @@
 require_relative "move_tree"
 class Knight
+  attr_reader :board_size
   def initialize(board_size)
+    @board_size = board_size
     @POSSIBLE_MOVES = [[2, 1], [2, -1], [-2, 1], [-2, -2], [1, 2], [1, -2], [-1, 2], [-1, -2]].freeze
     @move_tree = MoveTree.new(board_size, @POSSIBLE_MOVES)
   end
