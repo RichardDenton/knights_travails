@@ -12,6 +12,7 @@ class MoveTree
     target_node = find_node([start_node], end_pos)
   end
 
+  # Redo with map / filter
   def get_next_moves(x,y)
     moves = []
     @possible_moves.each do |move|
