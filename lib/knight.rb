@@ -1,8 +1,8 @@
 require_relative "move_tree"
 class Knight
   def initialize(board_size)
-    @possible_moves = [[2, 1], [2, -1], [-2, 1], [-2, -2], [1, 2], [1, -2], [-1, 2], [-1, -2]]
-    @move_tree = MoveTree.new(board_size, @possible_moves)
+    @POSSIBLE_MOVES = [[2, 1], [2, -1], [-2, 1], [-2, -2], [1, 2], [1, -2], [-1, 2], [-1, -2]].freeze
+    @move_tree = MoveTree.new(board_size, @POSSIBLE_MOVES)
   end
 
   def knight_moves(start_pos, end_pos)
