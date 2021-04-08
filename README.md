@@ -3,7 +3,7 @@ Project created in Ruby as part of the Odin Project's [Curriculum](https://www.t
 
 The program takes a start position and a target position for a knight on an 8 x 8 chessboard and shows what the quickest route is from the start position to the target position. 
 
-The approach I used was to use a depth first search to visit each square on the board that is reachable from the current square (starting from the start position) and recording the parent square
+The approach I used was to perform a depth first search, visiting each square on the board that is reachable from the current square (starting from the start position) and recording the parent square
 of each square that is visited until the target square is reached. Once the target square is reached the shortest path is found by working back up the path through each parent node until getting 
 back to the start position.
 
